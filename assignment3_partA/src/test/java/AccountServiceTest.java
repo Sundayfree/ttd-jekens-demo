@@ -2,10 +2,10 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import org.mockito.Mockito;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
 import org.mockito.stubbing.OngoingStubbing;
+
 
 /**
  * Description:
@@ -14,41 +14,63 @@ import org.mockito.stubbing.OngoingStubbing;
  */
 public class AccountServiceTest {
 
-    AccountServiceImpl account;
-    IAccountService mock;
+    AccountServiceImpl impl;
+    IAccountService inter;
+    Employee employee;
     double expected;
     double actual;
     double mockData;
-    Employee employee;
+
     @Before
     public void setUp() throws  Exception{
-        account= new AccountServiceImpl ();
-        mock = Mockito.mock (IAccountService.class);
-        mockData = 10.0;
-        Mockito.when (mock.computeTax (mockData)).thenReturn (expected);
-        account.setAccountService (this.mock);
-        actual= account.computeTax (mockData);
-        employee = Mockito.mock (Employee.class);
-        employee.setSalary (20.0);
-        Mockito.when (mock.weeklySalary (employee)).thenReturn (expected);
-        actual = account.weeklySalary (employee);
+        impl= new AccountServiceImpl ();
+        inter = Mockito.mock (IAccountService.class);
+        employee= new Employee ();
+        employee.setSalary (100.0);
 
     }
     @Test
     public void computeTaxTest(){
+        mockData = 10.0;
+       expected =mockData;
+        Mockito.when (inter.computeTax (mockData)).thenReturn (expected);
+        impl.setAccountService (this.inter);
         Assert.assertEquals (expected,actual,0.1);
     }
 
     @Test
     public void weeklySalaryTest(){
+
+        expected=employee.getSalary ();
+        Mockito.when (inter.weeklySalary (employee)).thenReturn (expected);
+        impl.setAccountService (this.inter);
+        actual= impl.weeklySalary (employee);
         Assert.assertEquals (expected,actual,0.1);
     }
-    @Test void fortnightSalaryTest(){
+    @Test
+    public void fortnightSalaryTest(){
+        expected= employee.getSalary ();
+        Mockito.when (inter.fortnightSalary (employee)).thenReturn (expected);
+        impl.setAccountService (this.inter);
+        actual= impl.fortnightSalary (employee);
+        Assert.assertEquals (expected,actual,0.1);
+
+
+    }
+
+    @Test
+    public void computeKiwiSaverTest(){
+        expected= employee.getSalary ();
+        Mockito.when (inter.computeKiwiSaver (employee)).thenReturn (expected);
+        impl.setAccountService (this.inter);
+        actual= impl.computeKiwiSaver (employee);
+        Assert.assertEquals (expected,actual,0.1);
 
     }
 
     @After
     public void tearDown() throws  Exception{
-        account=null;
+        impl=null;
+        employee=null;
     }
 }
