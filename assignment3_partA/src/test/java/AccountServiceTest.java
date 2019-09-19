@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 import org.mockito.stubbing.OngoingStubbing;
 
@@ -35,6 +36,7 @@ public class AccountServiceTest {
        expected =mockData;
         Mockito.when (inter.computeTax (mockData)).thenReturn (expected);
         impl.setAccountService (this.inter);
+        actual= impl.computeTax (mockData);
         Assert.assertEquals (expected,actual,0.1);
     }
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99aa8755-a6ff-4cf8-821e-d571ecb6294e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountServiceTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AccountServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+            <state relative-caret-position="206">
+              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,11 +44,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="181">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#207#208#0" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/IAccountService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="25" />
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -114,6 +114,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceTest.computeKiwiSaverTest">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.fortnightSalaryTest">
     <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment3_partA" />
       <option name="PACKAGE_NAME" value="" />
@@ -246,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountServiceTest.computeKiwiSaverTest" />
         <item itemvalue="JUnit.AccountServiceTest.fortnightSalaryTest" />
-        <item itemvalue="JUnit.AccountServiceTest.computeTaxTest" />
-        <item itemvalue="JUnit.AccountServiceTest.weeklySalaryTest" />
         <item itemvalue="JUnit.AccountServiceTest" />
+        <item itemvalue="JUnit.AccountServiceTest.computeTaxTest" />
+        <item itemvalue="JUnit.AccountServiceTest.computeKiwiSaverTest" />
+        <item itemvalue="JUnit.AccountServiceTest.weeklySalaryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,56 +271,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 05m 35s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 05m 46s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 06m 14s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 06m 54s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_weeklySalaryTest - 2019.09.19 at 16h 13m 21s.xml">
-      <configuration name="AccountServiceTest.weeklySalaryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 20m 57s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 21m 38s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 25m 50s.xml">
-      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 26m 12s.xml">
       <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 16h 26m 42s.xml">
       <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AccountServiceTest - 2019.09.19 at 17h 33m 07s.xml">
+      <configuration name="AccountServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_computeKiwiSaverTest - 2019.09.19 at 17h 33m 19s.xml">
+      <configuration name="AccountServiceTest.computeKiwiSaverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 17h 33m 23s.xml">
+      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_computeTaxTest - 2019.09.19 at 17h 33m 42s.xml">
+      <configuration name="AccountServiceTest.computeTaxTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest - 2019.09.19 at 17h 34m 01s.xml">
+      <configuration name="AccountServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_fortnightSalaryTest - 2019.09.19 at 17h 39m 19s.xml">
+      <configuration name="AccountServiceTest.fortnightSalaryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_fortnightSalaryTest - 2019.09.19 at 17h 40m 55s.xml">
+      <configuration name="AccountServiceTest.fortnightSalaryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_fortnightSalaryTest - 2019.09.19 at 17h 41m 58s.xml">
+      <configuration name="AccountServiceTest.fortnightSalaryTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16086000" />
+    <option name="totallyTimeSpent" value="16627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.13948497" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.1423462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5020492" side_tool="true" weight="0.13662376" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -330,6 +329,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32967034" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -362,21 +362,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="25" />
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -387,10 +376,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+        <state relative-caret-position="206">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
